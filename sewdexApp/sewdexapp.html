@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Essential for mobile responsiveness -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <title>SewDesk | Tailoring Management System</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            min-height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background: #ffffff;
+            overscroll-behavior: none;
+        }
+
+        /* Full-screen Google Apps Script application */
+        .app-frame {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100vh;
+            height: 100dvh;
+            margin: 0;
+            padding: 0;
+            border: none;
+            display: block;
+            background: #ffffff;
+        }
+
+        /* Safe-area support for iPhones */
+        @supports (padding: env(safe-area-inset-top)) {
+            .app-frame {
+                padding-top: env(safe-area-inset-top);
+                padding-bottom: env(safe-area-inset-bottom);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <iframe
+        class="app-frame"
+        src="https://script.google.com/macros/s/AKfycbyRMFjq1L2BmIomc4kubAU-1wguMjWQR1ZEpUewg_JkW5l_d0OxQsNbu9ZnBe2YwFlh/exec"
+        title="SewDesk Tailoring and Fashion Design Management System"
+        loading="eager"
+        allow="clipboard-read; clipboard-write"
+        referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+
+</body>
+</html>
